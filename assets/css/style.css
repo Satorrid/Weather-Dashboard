@@ -1,0 +1,20 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --graphite: rgb(33, 33, 33);
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100vh;
+}
+
+.container-1 {
+    padding-left: 2%;
+}
+

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,  800;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <header class="jumbotron">
+        <h1 class="text-center">Weather Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 bg-light">
+                <form id="location-form">
+                    <h4 class="pt-1 text-center font-weight-bold">Search for a City:</h4>
+                    <div class="input-group mb-3">
+                        <input name="location" type="text" class="form-control"id="user-input" type="text" placeholder="enter city name">
+                        <div class="input-group-append">
+                            <button class=" btn bg-info text-light" id="search-button">Search</button>
+                        </div>
+                    </div>
+                </form>
+                    
+        <ul class="city-list">
+
+        </ul>
+    </div>
+
+    <div class="col-sm-8">
+        <div class="row ml-2 border border-dark rounded">
+            <div class="col-sm-12" forecast-day="0">
+                <h3 class="city-name mb-2 mt-2 font-weight-bold" forecast-city></h3>
+                <p>Temperature:<span class="today-info" forecast-temp></span></p>
+                <p>Wind:<span class="today-info" forecast-wind></span></p>
+                <p>Humidity:<span class="today-info" forecast-humidity></span></p>
+                <p>UV Index:<span class="today-info" forecast-uv-index></span></p>
+            </div>
+        </div>
+        
+        
+        <!--forecast-->
+        <div class="col-sm-12" id="forecast">
+            <h3 class="font-weight-bold">5-Day Forecast:</h3>
+            <div class="row text-light">
+                <div forecast-day="1" class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 mt -2 rounded">
+                    <p forecast-date>date</p>
+                    <p forecast-icon>image</p>
+                    <p forecast-temp>Temp:</p>
+                    <p forecast-wind>Wind:</p>
+                    <p forecast-humidity>Humidity:</p>
+                </div>                
+                <div forecast-day="2" class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 mt -2 rounded">
+                    <p forecast-date>date</p>
+                    <p forecast-icon>image</p>
+                    <p forecast-temp>Temp:</p>
+                    <p forecast-wind>Wind:</p>
+                    <p forecast-humidity>Humidity:</p>
+                </div>                
+                <div forecast-day="3" class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 mt -2 rounded">
+                    <p forecast-date>date</p>
+                    <p forecast-icon>image</p>
+                    <p forecast-temp>Temp:</p>
+                    <p forecast-wind>Wind:</p>
+                    <p forecast-humidity>Humidity:</p>
+                </div>                
+                <div forecast-day="4" class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 mt -2 rounded">
+                    <p forecast-date>date</p>
+                    <p forecast-icon>image</p>
+                    <p forecast-temp>Temp:</p>
+                    <p forecast-wind>Wind:</p>
+                    <p forecast-humidity>Humidity:</p>
+                </div>                
+                <div forecast-day="5" class="col-sm-2 bg-dark forecast text-white ml-2 mb-3 mt -2 rounded">
+                    <p forecast-date>date</p>
+                    <p forecast-icon>image</p>
+                    <p forecast-temp>Temp:</p>
+                    <p forecast-wind>Wind:</p>
+                    <p forecast-humidity>Humidity:</p>
+                </div>                
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
